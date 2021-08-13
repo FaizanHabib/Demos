@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>No JS Checkbox Counter Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+  
+
+
+  input:checked {
+    counter-increment: list;
+  }
+  .result {
+    display: none;
+  }
+  input:checked ~ .result {
+    display: block;
+  }
+  .result::after {
+    content: "Selected: "counter(list);
+  }
+
+  </style>
+
+</head>
+<body>
+
+  <h3>Select any checkbox</h3>
+  <input type="checkbox">
+  <input type="checkbox">
+  <input type="checkbox">
+  <input type="checkbox">
+  <input type="checkbox">
+  <div class="result"></div>
+
+</body>
+</html>
