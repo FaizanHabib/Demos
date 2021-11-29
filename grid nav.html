@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by FaizanHabib (http://jsbin.com/kehigup/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  width: 100vw;
+  /* margin:1rem 0; */
+  min-width: 360px;
+  grid-template-rows: 50px;
+  align-items: center;
+  background-image: linear-gradient(red, brown, yellow, green, black, pink, blue);
+}
+.item {
+  background: black;
+  color: white;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 30px;
+}
+
+.item:hover{
+  background-color: red;
+  border-bottom: 5px solid white;
+  
+}
+
+.itemlogo span {
+  text-align: center;
+  padding: 1rem .5rem;
+  border-radius: 50%;
+  background-color: #000;
+  color: white;
+}
+.itemlogo {
+  display: flex;
+}
+
+.dropdown {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: black;
+  line-height: 30px;
+  border: 1px solid red;
+}
+  
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: white;
+}
+
+.dropdown-content p {
+  background: black;
+  line-height: 30px;
+  border: 1px solid red;
+  margin:0;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Home</div>
+    <div class="item">About</div>
+    <div class="item">Portfolio</div>
+    <div class="dropdown item">
+      <span>Services</span>
+      <div class="dropdown-content">
+        <p>Web Development</P>
+        <p>SEO</P>
+        <p>Custom Software</P>
+        <p>Mobile App Development</P>
+        <p>E-Commerce</P>
+      </div>
+    </div>
+    <div class="item">Blog</div>
+    <div class="item">Contact</div>
+  </div>
+</body>
+</html>

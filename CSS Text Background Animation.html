@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS Text Background Animation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+<style>
+body {
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+.container {
+  background: url('https://i.ibb.co/1sQXJ4z/page-bg.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.animated {
+  background: url('https://i.ibb.co/89Cf3dm/text-bg.png') no-repeat;
+  font-family: 'Charm', cursive;
+  margin: 0px;
+  padding: 0px;
+  font-size: 3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBg 90s linear infinite;
+  -webkit-animation: moveBg 90s linear infinite;
+}
+@keyframes moveBg {
+  0%   {background-position: 0% 30%;}
+  100% {background-position: 100% 50%;}
+}
+</style>
+</head>
+<body>
+ <div class="container">
+   <h1 class="animated">Hi, <span>&#129309;&#127995;</span> FAIZAN<h1>
+ </div>
+</body>
+</html>
