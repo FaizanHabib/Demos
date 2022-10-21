@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Smart Kid;
+    src: url('/fonts/Smart_Kid.otf');
+}
+
+@font-face {
+    font-family: ProximaNovaSoft-Medium;
+    src: url('/fonts/ProximaNovaSoft-Medium.otf');
+}
+
+@font-face {
+    font-family: ProximaNovaSoft-Semibold;
+    src: url('/fonts/ProximaNovaSoft-Semibold.otf');
+}
+
+@font-face {
+    font-family: ProximaNovaSoft-Regular;
+    src: url('/fonts/ProximaNovaSoft-Regular.otf');
+}
+
+@font-face {
+    font-family: ProximaNovaSoft-Bold;
+    src: url('/fonts/ProximaNovaSoft-Bold.otf');
+}
+
+#email0-firstName,
+#email0-how-does,
+#email0-circle-1,
+#email0-circle-2,
+#email0-circle-3,
+h1 {
+    font-family: 'Smart Kid';
+    font-weight: normal;
+}
+
+#email0-welcome,
+#email0-para-one,
+#email0-para-two {
+    font-family: ProximaNovaSoft-Medium;
+    font-weight: normal;
+}
+
+#email0-btn,
+#email0-btn-text {
+    font-family: ProximaNovaSoft-Semibold;
+    font-weight: normal;
+}
+
+#kj {
+    font-family: ProximaNovaSoft-Regular;
+    font-weight: normal;
+}
+
+#sd {
+    font-family: ProximaNovaSoft-Bold;
+    font-weight: normal;
+}
